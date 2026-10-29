@@ -8,11 +8,14 @@
 }
 
 :root {
+  color-scheme: light;
   --gx-max-width: 1080px;
   --gx-nav-height: 60px;
   --gx-accent-15: color-mix(in srgb, var(--gx-accent) 15%, transparent);
   --gx-indigo-dim: color-mix(in srgb, var(--gx-indigo) 8%, transparent);
 }
+
+[data-theme="dark"] { color-scheme: dark; }
 
 html {
   scroll-behavior: smooth;
