@@ -21,7 +21,7 @@ barrnapx is a client-side reimplementation of [barrnap](https://github.com/tseem
 
 ## Usage
 
-Visit **https://barrnapx.vercel.app**, upload one or more FASTA files, select a kingdom, and click **Run**.
+Visit **https://barrnapx.genomicx.org**, upload one or more FASTA files, select a kingdom, and click **Run**.
 
 The GFF3 output can be downloaded directly from the results panel.
 
@@ -77,3 +77,7 @@ barrnapx is inspired by [barrnap](https://github.com/tseemann/barrnap) by Torste
 ## License
 
 [GPL-3.0](LICENSE) © Nabil-Fareed Alikhan
+
+## Hosting
+
+Production runs on [Cloudflare Pages](https://barrnapx.genomicx.org). Build with Node.js 24 (`npm install`, `npm run build`) and deploy `dist/`. The reference databases remain under `/data/`; the Aioli/minimap2 WebAssembly runtime remains provided by biowasm. Shared theme tokens and bundled IBM Plex fonts come from `@genomicx/ui` 0.10.1.
